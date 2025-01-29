@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+    }
+    .full-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+    .btn-custom {
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(255, 102, 102, 0.8);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px rgba(99, 97, 97, 0.5);
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    .btn-custom:hover {
+      background-color: rgba(255, 102, 102, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container full-page">
+    <h1 class="mb-4">Image Gallery</h1>
+    <div class="row gallery">
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://i.pinimg.com/236x/b6/72/44/b67244f4debb9954d784ed5d984368a7.jpg" alt="Gallery Image 1" class="img-fluid">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://i.pinimg.com/236x/d2/26/d1/d226d1ea774c36f581fc76eaf1b8e160.jpg" alt="Gallery Image 2" class="img-fluid">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://i.pinimg.com/564x/61/a3/95/61a395b1da529e5f60a1b031193e7835.jpg" alt="Gallery Image 3" class="img-fluid">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ASV73WRKCWHG4dJ_VrADm-LbRCJbg-VT2Q&s" alt="Gallery Image 4" class="img-fluid">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://i.pinimg.com/236x/e8/e4/37/e8e437a789938e70c815e00d216d40ef.jpg" alt="Gallery Image 5" class="img-fluid">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_J4DknA638SDx0Rsjkoa-Vqp6g6LxgKrvA&s" alt="Gallery Image 6" class="img-fluid">
+      </div>
+    </div>
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
